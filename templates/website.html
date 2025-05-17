@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arbel's Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #1e1e1e;
+      color: #f4f4f4;
+    }
+
+    h1 {
+      color: #3498db;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin: 20px auto;
+      padding: 20px;
+      background: #2c2c2c;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(52, 152, 219, 0.2);
+      width: 300px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 10px;
+      color: #f4f4f4;
+      background-color: #3a3a3a;
+      border: 1px solid #555;
+      padding: 5px;
+      border-radius: 4px;
+    }
+
+    button,
+    .car-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      width: 120px;
+      height: 45px;
+    }
+
+    button:hover,
+    .car-button:hover {
+      background-color: #3462db;
+    }
+
+    img {
+      max-width: 100%;
+      margin-top: 20px;
+      border: 2px solid #3498db;
+      border-radius: 4px;
+    }
+
+    h2 {
+      color: #f4f4f4;
+    }
+
+    .button-container {
+      margin-top: 50px; /* Increased spacing below the image */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .button-row {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Car Body Types Classification</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" accept="image/*" required><br>
+    <button type="submit">Upload Image</button>
+  </form>
+
+  {% if uploaded_image %}
+    <h2>Uploaded Image:</h2>
+    <img src="{{ uploaded_image }}" alt="Uploaded Image">
+  {% endif %}
+
+  <div class="button-container">
+    <div class="button-row">
+      <button class="car-button" onclick="window.location.href='/suvs'">SUV</button>
+      <button class="car-button" onclick="window.location.href='/sedan'">Sedan</button>
+      <button class="car-button" onclick="window.location.href='/coupe'">Coupe</button>
+      <button class="car-button" onclick="window.location.href='/hatchback'">Hatchback</button>
+    </div>
+    <div class="button-row">
+      <button class="car-button" onclick="window.location.href='/convertible'">Convertible</button>
+      <button class="car-button" onclick="window.location.href='/pickup'">Pickup</button>
+      <button class="car-button" onclick="window.location.href='/van'">Van</button>
+    </div>
+  </div>
+
+</body>
+</html>

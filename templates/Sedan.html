@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sedan Showcase</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --secondary: #2c3e50;
+      --accent: #95a5a6;
+      --background: #000000;
+      --text-light: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--background);
+      color: var(--text-light);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .tablet {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .tablet h3 {
+      color: var(--primary);
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .grid-models {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .car-model {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .car-model img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .car-model h3 {
+      color: var(--primary);
+      margin: 0;
+    }
+
+    .car-model p {
+      margin: 5px 0;
+    }
+    .back-button {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+        background-color: ##3498db;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        z-index: 1000;
+          }
+
+          .back-button:hover {
+            background-color: #3462db;
+          }
+  </style>
+</head>
+<body>
+<a href="/" class="back-button">← Go Back</a>
+  <div class="container">
+    <header>
+      <h1>Sedan Showcase</h1>
+    </header>
+
+    <section>
+      <h2>What is a Sedan?</h2>
+      <div class="grid">
+        <div class="tablet">
+          <h3>Definition</h3>
+          <p>
+            A sedan is a passenger car in a three-box configuration with separate compartments for engine, passenger, and cargo. Sedans typically have four doors and a traditional trunk.
+          </p>
+        </div>
+        <div class="tablet">
+          <h3>Who is it Suitable For?</h3>
+          <p>
+            Sedans are ideal for individuals, couples, or small families who value comfort, fuel efficiency, and style. They’re perfect for city driving, commuting, and highway cruising.
+          </p>
+        </div>
+        <div class="tablet">
+          <h3>Advantages</h3>
+          <ul>
+            <li>Fuel efficient and aerodynamic</li>
+            <li>Comfortable and quiet ride</li>
+            <li>More affordable than SUVs or trucks</li>
+            <li>Better handling and cornering</li>
+          </ul>
+        </div>
+        <div class="tablet">
+          <h3>Disadvantages</h3>
+          <ul>
+            <li>Less cargo space than hatchbacks or SUVs</li>
+            <li>Lower ground clearance</li>
+            <li>Not ideal for off-road or rough terrain</li>
+            <li>Rear headroom can be tight in some models</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Top 12 Sedan Models</h2>
+      <div class="grid-models">
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Toyota+Camry" alt="Toyota Camry" />
+          <h3>Toyota Camry</h3>
+          <p><strong>Price:</strong> ₪170,000</p>
+          <p><strong>Horsepower:</strong> 203 HP</p>
+          <p><strong>Colors:</strong> White, Gray, Red</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Honda+Accord" alt="Honda Accord" />
+          <h3>Honda Accord</h3>
+          <p><strong>Price:</strong> ₪180,000</p>
+          <p><strong>Horsepower:</strong> 192 HP</p>
+          <p><strong>Colors:</strong> Black, Silver, Blue</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Hyundai+Sonata" alt="Hyundai Sonata" />
+          <h3>Hyundai Sonata</h3>
+          <p><strong>Price:</strong> ₪160,000</p>
+          <p><strong>Horsepower:</strong> 191 HP</p>
+          <p><strong>Colors:</strong> White, Black, Blue</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Kia+K5" alt="Kia K5" />
+          <h3>Kia K5</h3>
+          <p><strong>Price:</strong> ₪165,000</p>
+          <p><strong>Horsepower:</strong> 180 HP</p>
+          <p><strong>Colors:</strong> Gray, White, Red</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Nissan+Altima" alt="Nissan Altima" />
+          <h3>Nissan Altima</h3>
+          <p><strong>Price:</strong> ₪175,000</p>
+          <p><strong>Horsepower:</strong> 188 HP</p>
+          <p><strong>Colors:</strong> Silver, Black, White</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Mazda6" alt="Mazda6" />
+          <h3>Mazda6</h3>
+          <p><strong>Price:</strong> ₪185,000</p>
+          <p><strong>Horsepower:</strong> 187 HP</p>
+          <p><strong>Colors:</strong> Red, Gray, Blue</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=BMW+3+Series" alt="BMW 3 Series" />
+          <h3>BMW 3 Series</h3>
+          <p><strong>Price:</strong> ₪270,000</p>
+          <p><strong>Horsepower:</strong> 255 HP</p>
+          <p><strong>Colors:</strong> White, Black, Silver</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Mercedes+C-Class" alt="Mercedes C-Class" />
+          <h3>Mercedes C-Class</h3>
+          <p><strong>Price:</strong> ₪290,000</p>
+          <p><strong>Horsepower:</strong> 255 HP</p>
+          <p><strong>Colors:</strong> Black, Blue, White</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Tesla+Model+3" alt="Tesla Model 3" />
+          <h3>Tesla Model 3</h3>
+          <p><strong>Price:</strong> ₪230,000</p>
+          <p><strong>Horsepower:</strong> 283 HP</p>
+          <p><strong>Colors:</strong> White, Black, Red</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Audi+A4" alt="Audi A4" />
+          <h3>Audi A4</h3>
+          <p><strong>Price:</strong> ₪250,000</p>
+          <p><strong>Horsepower:</strong> 261 HP</p>
+          <p><strong>Colors:</strong> Gray, Silver, Black</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Skoda+Octavia" alt="Skoda Octavia" />
+          <h3>Skoda Octavia</h3>
+          <p><strong>Price:</strong> ₪145,000</p>
+          <p><strong>Horsepower:</strong> 150 HP</p>
+          <p><strong>Colors:</strong> White, Black, Blue</p>
+        </div>
+        <div class="car-model">
+          <img src="https://via.placeholder.com/300x200?text=Peugeot+508" alt="Peugeot 508" />
+          <h3>Peugeot 508</h3>
+          <p><strong>Price:</strong> ₪195,000</p>
+          <p><strong>Horsepower:</strong> 180 HP</p>
+          <p><strong>Colors:</strong> Red, White, Gray</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
